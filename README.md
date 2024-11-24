@@ -1,0 +1,1 @@
+# maven-archetype-api-tests
