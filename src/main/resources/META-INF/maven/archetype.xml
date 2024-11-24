@@ -1,0 +1,14 @@
+<archetype>
+  <id>api-test-archetype</id>
+  <sources>
+  </sources>
+  <testSources>
+    <source>src/test/java/endpoints/AuthEndpoint.java</source>
+    <source>src/test/java/endpoints/CreateBookingEndpoint.java</source>
+    <source>src/test/java/payload/AuthPayload.java</source>
+    <source>src/test/java/payload/CreateBookingPayload.java</source>
+    <source>src/test/java/BaseTest.java</source>
+    <source>src/test/java/CreateBookingTest.java</source>
+    <source>src/test/java/Constants.java</source>
+  </testSources>
+</archetype>
