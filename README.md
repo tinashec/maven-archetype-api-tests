@@ -1,6 +1,6 @@
 This is a Maven archetype project for creating an E2E API testing framework. The framework uses RestAssured as the rest client and TestNG as the test framework. When creating a testing framework from scratch there is a lot to consider. Things like, the test framework (TestNG, jUnit), the rest clients, the reporting tools, and the software build management (Gradle or Maven), will the tests be data-driven? What is the structure of the project itself (where do the test classes go, where do I put the endpoints, where do I put the payload)? All this can be overwhelming as you start. The goal of this archetype is to help those with these questions, to generate a project with everything set up and have them running E2E API tests with just a few commands.
 # Getting started
-The project requires Java 21 and uses Maven as the software project management tool. The IDE of choice is IntelliJ, feel free to use any IDE you're comfortable with
+The project requires Java 21 and uses Maven as the software project management tool. The IDE of choice is IntelliJ, feel free to use any IDE you're comfortable with.
 Clone the repo and navigate to the root project `<your_project_folder>/api-test-archetype/`. In the terminal, run the following commands:
 1. `mvn install`
 2. create the folder that'll house your test project if not already available
