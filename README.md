@@ -33,11 +33,11 @@ api-test
                  `-- utils
 ```
 The endpoints define the REST related methods for the API calls. e.g. if the service under test
-creates a user via a POST request to the endpoint `/create/user/`, we will have the method createUser(CreateUserPayload payload)
+creates a user via a POST request to the endpoint `/create/user/`, we will have the method `createUser(CreateUserPayload payload)`
 in the endpoints package. 
 
 The model defines entities that are used to build up the payload. When 
 creating a user the payload could require details of the user and information related to their location i.e.
 Address. The model can have an Address and User entities.
 
-The payload defines the request body required by the service. Tests can be grouped by the feature being tested.
+The payload defines the request body required by the service. Last but not least, tests can be grouped by the feature being tested.
