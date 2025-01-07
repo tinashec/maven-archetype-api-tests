@@ -21,6 +21,10 @@ public class CreateBookingTest {
         // then the booking is successful
         createBookingResp.then().
                 statusCode(HttpStatus.SC_OK).
-                assertThat().body("bookingid", is(not(emptyOrNullString())));
+                assertThat().body("bookingid", is(not(emptyOrNullString()))).
+                log().status();
+        
+        createBookingResp.then().
+                log().body();
     }
 }
