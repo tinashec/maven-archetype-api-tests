@@ -3,6 +3,7 @@ package ${package};
 import ${package}.endpoints.CreateBookingEndpoint;
 import ${package}.payload.CreateBookingPayload;
 import ${package}.model.BookingDates;
+import ${package}.dataprovider.BookingDataProvider;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;
@@ -11,19 +12,10 @@ import static org.hamcrest.Matchers.*;
 
 public class CreateBookingTest {
 
-    @Test (description = "create booking test")
-    public void createBookingTest(){
-        // given booking payload (this should be moved to a data-provider)
-        BookingDates dates = new BookingDates("2030-01-01", "2030-01-02");
-        
-        CreateBookingPayload bookingPayload = CreateBookingPayload.builder().
-                    firstname("Test").
-                    lastname("Booking").
-                    totalprice(50).
-                    depositpaid(true).
-                    bookingdates(dates).
-                    additionalneeds("Extra bed").
-                build();
+    @Test (description = "create booking test", dataProvider = BookingDataProvider.BOOKING_PROVIDER,
+            dataproviderClass = BookingDataProvider.class)
+    public void createBookingTest(CreateBookingPayload bookingPayload){
+        // given booking payload (injected into the method via the data-provider)
         // when I make a booking
         Response createBookingResp = CreateBookingEndpoint.createBooking(bookingPayload);
         // then the booking is successful

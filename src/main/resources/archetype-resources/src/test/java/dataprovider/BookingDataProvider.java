@@ -4,12 +4,14 @@ import org.testng.annotations.DataProvider;
 import ${package}.payload.CreateBookingPayload;
 
 public class BookingDataProvider{
+    
+    public static final String BOOKING_PROVIDER = "bookingDataProvider";
 
     /**
      * a dataprovider that supplies the test method with the booking payload
      * @return a @CreateBookingPayload 
      */
-    @DataProvider (name = "bookingDataProvider")
+    @DataProvider (name = BOOKING_PROVIDER)
     public Object[][] bookingDataProvider(){
         Object[][] booking;
         BookingDates dates = new BookingDates("2030-01-01", "2030-01-02");
