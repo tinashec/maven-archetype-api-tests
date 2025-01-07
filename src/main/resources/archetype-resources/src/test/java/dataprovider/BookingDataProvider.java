@@ -2,6 +2,7 @@ package ${package}.dataprovider;
 
 import org.testng.annotations.DataProvider;
 import ${package}.payload.CreateBookingPayload;
+import ${package}.model.BookingDates;
 
 public class BookingDataProvider{
     

@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.*;
 public class CreateBookingTest {
 
     @Test (description = "create booking test", dataProvider = BookingDataProvider.BOOKING_PROVIDER,
-            dataproviderClass = BookingDataProvider.class)
+            dataProviderClass = BookingDataProvider.class)
     public void createBookingTest(CreateBookingPayload bookingPayload){
         // given booking payload (injected into the method via the data-provider)
         // when I make a booking
