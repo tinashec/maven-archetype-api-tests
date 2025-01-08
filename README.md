@@ -15,7 +15,7 @@ Next, in the terminal, run the following command from the root of the cloned pro
       - groupID: e.g. com.my_company_name
       - version: e.g. 1.0
       - package: e.g. e2e-api-test 
-6. confirmation of the config. Type yes i.e. y 
+      - confirmation of the config. Type yes i.e. y 
 7. this will create the project which you can open in your IDE
 
 # Directory structure
