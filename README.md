@@ -35,7 +35,7 @@ api-test
                  `-- payload
                  `-- utils
 ```
-# Overview of directory/project structure
+# Overview of the project structure
 The dataprovider package will house the classes that inject data into the test. Think of this as having the responsibility
 to generate and supply data to your test. Do you need a user to login? Do you need details of a payment i.e. card details,
 amount and what is being paid for? The dataprovider is responsible for generating this. In advanced setups, you can connect to 
